@@ -1,0 +1,74 @@
+<DOCTYPE !html>
+		<html lang="pt-br">
+	<head>
+	<meta charset="utf-8">
+	<link rel= "stylesheet"  href= "style.css">
+	
+	<script src="calcamps.js"></script>
+
+  	<title>Exercicio Form htlm</title>
+
+<body>
+    <div class="org">
+	<div><h1>LANÇAMENTO DE NOTAS</h1></div><br>
+	<form  method="post" enctype="multipart/form-data">
+	 <table border="0">
+	 <label for="disciplina"><h4>Selecione a disciplina: </label>
+	 	<select name="Disciplina" id="idDisciplina">
+	 	<option value="1">Introdução à informática</option>
+        <option value="2">Linguagens de Programação</option>
+        <option value="3">Programação de Computadores</option>
+      </select>
+
+		<td><label><h4>Nome do aluno</h4></label></td>
+			<td><label><h4>Prova1</h4></label></td>
+				<td><label><h4>Prova2</h4></label></td>
+					<td><label><h4>Exame</h4></label></td>
+						<td><label><h4>Media</h4></label></td>
+							<td><label><h4>Faltas</h4></label></td>
+
+	<tr><td><h4>Joana da Silva</h4></td>
+
+		  <td><input type="number" name="Prova1" id="p1" required="" min="0"max="10" onchange="calccamp1()" Pattern="\d{2}$" /></td>	
+
+		  		<td><input type="number" name="Prova2" id="p2" required="" min=0 max="10" onchange="calccamp1()" Pattern="\d{2}$" /></td>	
+
+		    		<td><input type="number" name="Exame" id="e_1" required="" min="0" max="10" Pattern="\d{2}$" onchange="calccamp1()"/></td>
+
+		    				<td><input type="number" name="Media" id="m_1" readonly="" min="1" max="10" onchange="calccamp1()" Pattern="\d{2}$" /></td>
+
+		    		  				<td><input type="number" name="Faltas" id="f_1" min="0" max="16" Pattern="\d{2}$" /></td></tr>
+  	
+	<tr><td><h4>Maria do Socorro</h4></td>
+
+		  	<td><input type="number" name="Prova1" id="p12" required="" min="0"max="10" Pattern="\d{2}$" onchange="calccamp2()"/></td>	
+
+		  		<td><input type="number" name="Prova2" id="p22" required="" min=0 max="10" Pattern="\d{2}$" onchange="calccamp2()"/></td>	
+
+		    		<td><input type="number" name="Exame" id="e_12" required="" min="0" max="10" Pattern="\d{2}$" onchange="calccamp2()"/></td>
+
+		    				<td><input type="number" name="Media" id="m_12" readonly="" min="1" max="10" onchange="calccamp2()" Pattern="\d{2}$" /></td>
+
+		    		  				<td><input type="number" name="Faltas" id="f_12" min="0" max="16" Pattern="\d{2}$" /></td></tr> 
+
+	<tr><td><h4>Pedro Santos</h4></td>
+
+		  	<td><input type="number" name="Prova1" id="p13" required="" min="0"max="10" Pattern="\d{2}"onchange="calccamp3()"/></td>	
+
+		  		<td><input type="number" name="Prova2" id="p23" required="" min=0 max="10" Pattern="\d{2}" onchange="calccamp3()"/></td>	
+
+		    		<td><input type="number" name="Exame" id="e_13" required="" min="0" max="10" Pattern="\d{2}" onchange="calccamp3()"/></td>
+
+		    			<td><input type="number" name="Media" id="m_13" readonly="" min="1" max="10" Pattern="\d{2}" onchange="calccamp3()" /></td>
+
+		    		  	  	<td><input type="number" name="Faltas" id="f_13" min="0" max="16" Pattern="\d{2}" /></td></tr>
+
+	<td><input type="submit" name="Salvar" value="Salvar"/> 
+	<input type="Reset" name="Limpar" value="Limpar"/></td>   
+
+</div>
+  	</form>
+
+  </body>
+
+</html>

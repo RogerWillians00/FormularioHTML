@@ -1,0 +1,44 @@
+
+h1
+{	color: white;
+	font-size:26px; 
+	font-family: sans-serif;
+  text-align: center;
+}
+
+h4
+{
+  color: black; 
+  font-family: sans-serif;
+
+}
+
+h6
+{
+color: black; 
+font-family: sans-serif;
+}
+
+div
+  { width: 670px;
+  	height: 70px;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 6px;
+  	padding: 1px;
+  	position: relative;
+  	background: darkblue;
+  }
+
+div.org
+{
+    width: 670px;
+    height: 370px;
+    top: -50%;
+    left: 20%;
+    border-radius: 6px;
+    padding: 1px;
+    position: relative;
+    background: lightgray;
+    text-align: center;
+}
